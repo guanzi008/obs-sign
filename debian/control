@@ -1,0 +1,17 @@
+Source: obs-signd
+Section: admin
+Priority: optional
+Maintainer: Open Build Service Team <buildservice@lists.opensuse.org>
+Build-Depends: debhelper-compat (= 13), libssl-dev, gnupg, openssl
+Standards-Version: 4.7.0
+Homepage: https://openbuildservice.org/
+Rules-Requires-Root: binary-targets
+
+Package: obs-signd
+Architecture: any
+Depends: adduser, gnupg, ${perl:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Description: openSUSE Build Service signing daemon
+ The openSUSE Build Service sign client and daemon.
+ .
+ This daemon signs data via GnuPG or OpenSSL while communicating with a
+ remote server, allowing private keys to stay on secured hosts.

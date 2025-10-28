@@ -1,0 +1,21 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    configure)
+        if ! getent group obsrun >/dev/null; then
+            addgroup --system obsrun
+        fi
+        if ! getent passwd obsrun >/dev/null; then
+            adduser --system --ingroup obsrun --home /var/lib/obs-signd --no-create-home --shell /usr/sbin/nologin obsrun
+        fi
+        if ! dpkg-statoverride --list /usr/bin/sign >/dev/null 2>&1; then
+            dpkg-statoverride --add root obsrun 4750 /usr/bin/sign
+        fi
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0
+

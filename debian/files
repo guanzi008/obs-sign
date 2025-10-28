@@ -1,0 +1,3 @@
+obs-signd-dbgsym_2.8.4-1_amd64.ddeb debug optional automatic=yes
+obs-signd_2.8.4-1_amd64.buildinfo admin optional
+obs-signd_2.8.4-1_amd64.deb admin optional

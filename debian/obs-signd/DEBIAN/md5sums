@@ -1,0 +1,10 @@
+fd869b1329b02232318723c7b1c02f80  lib/systemd/system/obs-signd.service
+c0d6c8f791ef900ea5fd01ec613fb82f  usr/bin/sign
+fd869b1329b02232318723c7b1c02f80  usr/lib/systemd/system/obs-signd.service
+bdfcb6d4f16e250bdc19465109de7e32  usr/sbin/signd
+6f2ce5a3959e8438655bda9196f919d7  usr/share/doc/obs-signd/COPYING.gz
+de5e32ab1dfd7be52c8c7a9c3ef0884a  usr/share/doc/obs-signd/changelog.Debian.gz
+f92756fa13098a610b42cdcee942c488  usr/share/doc/obs-signd/examples/sign.permission
+d0ee474af3700fbad8592dcd6f10cc21  usr/share/man/man8/sign.8.gz
+610994d607035d833fad09f9aa1a4ae9  usr/share/man/man8/sign.conf.8.gz
+72b0390c00a6a3e996ab6eedcdbb0f81  usr/share/man/man8/signd.8.gz

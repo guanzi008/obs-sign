@@ -1,0 +1,15 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    purge)
+        if dpkg-statoverride --list /usr/bin/sign >/dev/null 2>&1; then
+            dpkg-statoverride --remove /usr/bin/sign
+        fi
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0
+

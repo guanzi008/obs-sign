@@ -1,0 +1,14 @@
+[Unit]
+Description=GPG Sign Daemon
+After=network.target syslog.target
+
+[Service]
+Type=simple
+PIDFile=/run/signd.pid
+EnvironmentFile=-/etc/default/obs-signd
+ExecStart=/usr/sbin/signd
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
+

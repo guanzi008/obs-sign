@@ -1,0 +1,6 @@
+obs-signd (2.8.4-1) unstable; urgency=medium
+
+  * Initial release for Debian, derived from upstream dist packaging.
+
+ -- Open Build Service Team <buildservice@lists.opensuse.org>  Tue, 28 Oct 2025 17:38:00 +0000
+

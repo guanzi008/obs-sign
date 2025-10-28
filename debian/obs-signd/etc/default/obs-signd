@@ -1,0 +1,7 @@
+# Environment configuration for obs-signd.
+# Derived from dist/sysconfig.signd.
+#
+# GNUPGHOME points to the directory that keeps the keyring used by the
+# signing daemon. Leave empty to let the service pick a default path.
+GNUPGHOME="/srv/obs/gnupg"
+

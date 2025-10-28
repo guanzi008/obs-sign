@@ -1,0 +1,13 @@
+Package: obs-signd-dbgsym
+Package-Type: ddeb
+Source: obs-signd
+Version: 2.8.4-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Open Build Service Team <buildservice@lists.opensuse.org>
+Installed-Size: 188
+Depends: obs-signd (= 2.8.4-1)
+Section: debug
+Priority: optional
+Description: debug symbols for obs-signd
+Build-Ids: 27a8cb7026d93e797696f8b36b8d792658781385

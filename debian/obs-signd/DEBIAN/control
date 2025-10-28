@@ -1,0 +1,14 @@
+Package: obs-signd
+Version: 2.8.4-1
+Architecture: amd64
+Maintainer: Open Build Service Team <buildservice@lists.opensuse.org>
+Installed-Size: 254
+Depends: adduser, gnupg, perl:any, libc6 (>= 2.34)
+Section: admin
+Priority: optional
+Homepage: https://openbuildservice.org/
+Description: openSUSE Build Service signing daemon
+ The openSUSE Build Service sign client and daemon.
+ .
+ This daemon signs data via GnuPG or OpenSSL while communicating with a
+ remote server, allowing private keys to stay on secured hosts.
