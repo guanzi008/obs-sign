@@ -25,6 +25,8 @@ make_path($var_dir);
 $ENV{LANG} = 'C';
 $ENV{GNUPGHOME} = "$tmp_dir/gnupg";
 make_path($ENV{GNUPGHOME});
+spew("$ENV{GNUPGHOME}/gpg.conf", "allow-weak-digest-algos\nallow-weak-key-signatures\n");
+chmod 0600, "$ENV{GNUPGHOME}/gpg.conf";
 chmod 0700, $ENV{GNUPGHOME};
 system("gpg -q --import $fixtures_dir/secret-key.asc");
 
@@ -216,4 +218,3 @@ sub spew {
   print $fh $content;
   close $fh;
 }
-

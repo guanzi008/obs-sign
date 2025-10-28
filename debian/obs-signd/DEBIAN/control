@@ -2,7 +2,7 @@ Package: obs-signd
 Version: 2.8.4-1
 Architecture: amd64
 Maintainer: Open Build Service Team <buildservice@lists.opensuse.org>
-Installed-Size: 254
+Installed-Size: 250
 Depends: adduser, gnupg, perl:any, libc6 (>= 2.34)
 Section: admin
 Priority: optional

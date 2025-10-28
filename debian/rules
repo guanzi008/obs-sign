@@ -14,7 +14,6 @@ override_dh_auto_install:
 	install -D -m0755 signd debian/obs-signd/usr/sbin/signd
 	install -D -m0644 sign.conf debian/obs-signd/etc/sign.conf
 	install -D -m0644 debian/obs-signd.default debian/obs-signd/etc/default/obs-signd
-	install -D -m0644 debian/obs-signd.service debian/obs-signd/lib/systemd/system/obs-signd.service
 	install -D -m0644 dist/sign.permission debian/obs-signd/usr/share/doc/obs-signd/examples/sign.permission
 
 override_dh_auto_test:
